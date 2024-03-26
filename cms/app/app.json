@@ -1,0 +1,20 @@
+{
+    "desc": "BGCMS, a Content Management System",
+    "required-apps": [{
+        "app": "account",
+        "skip-stop": true
+    }],
+    "optional-apps": ["todo", {
+        "app": "graphviz",
+        "skip-stop": true
+    }],
+    "objs": [{
+        "obj": "main", "IF": "BGCMS"
+    }, {
+        "obj": "media", "IF": "JS", "src": "media.js"
+    }, {
+        "obj": "web", "IF": "JS", "src": "web.js"
+    }, {
+        "obj": "convert_dot", "IF": "JS", "src": "convert_dot.js"
+    }]
+}

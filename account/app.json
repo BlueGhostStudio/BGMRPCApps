@@ -1,0 +1,9 @@
+{
+    "desc": "BGMRPC account management",
+    "objs": [{
+        "obj": "account",
+        "IF": "JS",
+        "noprefix": true,
+        "src": "main.js"
+    }]
+}
